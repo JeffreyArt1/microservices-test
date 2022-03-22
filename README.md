@@ -12,7 +12,10 @@ $ npm install
 
 ```bash
 # development
-$ npm run start:dev && nest run gateway -w
+$ npm run start:dev
+
+# run in a separate terminal
+$ nest run gateway -w
 
 ```
 
