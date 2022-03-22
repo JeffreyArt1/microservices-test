@@ -1,0 +1,30 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/mik/src",
+  "monorepo": true,
+  "root": "apps/mik",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/mik/tsconfig.app.json"
+  },
+  "projects": {
+    "mik": {
+      "type": "application",
+      "root": "apps/mik",
+      "entryFile": "main",
+      "sourceRoot": "apps/mik/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/mik/tsconfig.app.json"
+      }
+    },
+    "gateway": {
+      "type": "application",
+      "root": "apps/gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/gateway/tsconfig.app.json"
+      }
+    }
+  }
+}
